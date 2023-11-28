@@ -90,7 +90,7 @@ public class LinkMgmtService {
             final JSONObject link = requestJSONObject.getJSONObject(Link.LINK);
             String icon = StringUtils.trim(link.optString(Link.LINK_ICON));
             if (StringUtils.isBlank(icon)) {
-                icon = "https://b3log.org/images/brand/solo-32.png";
+                icon = "https://amethystfob.oss-cn-beijing.aliyuncs.com/logo/logo%4032.png";
             }
             link.put(Link.LINK_ICON, icon);
             final String linkId = link.getString(Keys.OBJECT_ID);
@@ -184,7 +184,7 @@ public class LinkMgmtService {
             final JSONObject link = requestJSONObject.getJSONObject(Link.LINK);
             String icon = StringUtils.trim(link.optString(Link.LINK_ICON));
             if (StringUtils.isBlank(icon)) {
-                icon = "https://b3log.org/images/brand/solo-32.png";
+                icon = "https://amethystfob.oss-cn-beijing.aliyuncs.com/logo/logo%4032.png";
             }
             link.put(Link.LINK_ICON, icon);
             final int maxOrder = linkRepository.getMaxOrder();
